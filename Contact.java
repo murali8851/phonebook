@@ -1,7 +1,6 @@
 
 package contact;
 
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -16,7 +15,11 @@ public class Contact {
        Contact obj=new Contact();
        int no;
        String fname,lname,mnum,email,address;
-       int choice,limit=0;
+       int choice,limit=0,maxi,q=0;
+       System.out.println("enter the max entries into database");
+       maxi=s.nextInt();
+       while(q==0)
+       {       
        limit=obj.max();
        System.out.println("there are"+limit+"entries. dont exceed 10 entries");
        System.out.println("enter the choice");
@@ -32,9 +35,9 @@ public class Contact {
        switch(choice)
        {
            case 1:System.out.println("enter the inputs s.no,firstname,lastname,mobile,email,address");
-                  limit++;
-                  if(limit<10)
+                  if(limit<maxi)
                   {
+                  limit++;
                   no=s.nextInt();
                   fname=s.next();
                   lname=s.next();
@@ -128,14 +131,20 @@ public class Contact {
                    break;
            case 7: System.out.println("enter the file name");
                    String f1=s.next();
-                   if(limit<10)
+                   if(limit<maxi)
                      limit=obj.load(f1,limit);
                    else
                      System.out.println("no more entries");  
                    break;
-       }
-       
-      
+           case 8:System.out.println("are you sure ? 1.yes 2.no");
+                     q=s.nextInt();
+                     if(q==1)
+                         System.out.println("thank you");
+                     break;
+           default: System.out.println("enter a valid choice");
+                         
+       }   
+    }
     }
    
     public void add(int i1,String s1,String s2,String s3,String s4,String s5,int lim)
