@@ -1,0 +1,11 @@
+1.I have prepared phonebook with support of DATABASE .
+2.I cant attach database , so I will instruct you to create a database named "phonebook".
+3.In this database "phonebook" create a table named "list" with following fields
+    name       type        range    key
+  - no         Int         10       primary
+  - fname      varchar     20       -
+  - lname      varchar     20       -
+  - mnum       varchar     50       -
+  - email      varchar     50       -
+  - address    varchar     100      -
+4.I have used WAMP server to create this database

@@ -1,0 +1,13 @@
+1.I have used NETBEANS8.2 to create this project .
+2.I have used WAMP SERVER to create backend database.
+3.My project is supposed to do the following
+  - add a new entry into database.
+  - remove an existing entry from the database.
+  - search for an entry based on fname,lname , mnum, email, address based on user wish.
+  - edit an existing entry.
+  - sort the entries based on fname,lname , mnum, email, address based on user wish.
+  - load a large number of entries from a text file into database.
+  - save the content of database in a text file.
+4.I have set a limit for number of entries in database . this limit is taken from user during runtime .
+  so that user can have his own limit to entries.
+5.entries exceeding this limit is not allowed into database.
